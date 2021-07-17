@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title  %> </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <form method="POST" action="/new">
+    <label for='user'>Username: </label>
+    <input type="text" name="user" id="user" >
+    <label for="message">Message</label>
+    <textarea name="text" id="message"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -19,6 +19,7 @@ const messageSchema = new mongoose.Schema({
 messageSchema.virtual("format_time").set(function () {
   this.addTime = formatDistanceToNow(this.addTime);
 });
+
 const Message = mongoose.model("message", messageSchema);
 
 module.exports = Message;

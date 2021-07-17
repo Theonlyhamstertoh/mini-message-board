@@ -13,4 +13,7 @@ router.get("/", async function (req, res, next) {
   res.render("index", { title: "Message Board ", messages: formattedMessages });
 });
 
+router.get("/refresh", (req, res) => {
+  res.redirect("back");
+});
 module.exports = router;
